@@ -1,0 +1,39 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Background Video</title> 
+  <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <video class="video-bg" autoplay=""> 
+   <source src="y2mate.com - Watch Dogs 2 Main Menu Background Video_v720P.mp4" type="video/mp4"> Your browser does not support the video tag. 
+  </video> 
+  <script>
+        // Set the duration of the video in milliseconds (1 minute 29 seconds = 89000 ms)
+        const videoDuration = 89000;
+
+        // Redirect URL after the video ends
+        const redirectURL = 'https://fackied.github.io/nama2/';
+
+        // Function to redirect after the specified duration
+        setTimeout(() => {
+            window.location.href = redirectURL;
+        }, videoDuration);
+    </script> 
+ </body>
+</html>
